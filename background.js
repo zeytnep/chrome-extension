@@ -9,6 +9,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     var url = currentTab.url;
 
     // Display the URL in the console
-    alert("Current URL of the website: xoxox " + url);
+    alert("Current URL of the website: " + url);
   });
 });
