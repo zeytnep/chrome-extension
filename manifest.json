@@ -1,5 +1,25 @@
+// manifest.json
 {
-	
-
-	
+  "manifest_version": 2,
+  "name": "URL Display Extension",
+  "version": "1.0",
+  "description": "Displays the current website's URL.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png"
+    },
+    "default_title": "Click to display URL"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
+
